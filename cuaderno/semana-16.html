@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cuando un agente llama una acción, el diseño debe controlar qué se modifica, con qué identidad y cómo se confirma el resultado.">
+  <title>Acciones para agentes y gobierno de flujos · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 16 · Empresa III</span>
+        <h1>Acciones para agentes y gobierno de flujos</h1>
+        <p>Cuando un agente llama una acción, el diseño debe controlar qué se modifica, con qué identidad y cómo se confirma el resultado.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Contrato de la acción</a>
+          <a href="#tema-2">Control antes de escribir</a>
+          <a href="#tema-3">Modelos locales</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Contrato de la acción</h2>
+          <p>Una acción recibe parámetros definidos y devuelve un resultado interpretable. El flujo valida formatos, permisos y reglas de negocio antes de escribir. Distingue los estados solicitado, ejecutado y fallido para que el agente confirme lo que ocurrió.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Control antes de escribir</h2>
+          <p>Muestra a la persona qué se cambiará cuando la acción lo amerite. Comprueba que el registro sigue en el estado esperado, registra el resultado y maneja duplicados. Separa entorno de prueba y producción, permisos operacionales y trazabilidad.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Modelos locales</h2>
+          <p>Ejecutar un modelo en infraestructura propia cambia dónde ocurre la inferencia. Todavía se necesita gestionar hardware, actualizaciones, accesos, fuentes y registros. Algunas integraciones pueden mantener dependencias externas.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Intención</li>
+            <li>Validación y confirmación</li>
+            <li>Flujo autorizado</li>
+            <li>Comprobante de ejecución</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Un agente ficticio solicita cambiar una ficha a «lista para revisión». El flujo comprueba la autorización y el estado vigente. Si la ficha fue modificada por otra persona, devuelve conflicto y el agente deriva la revisión.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>Una confirmación debe basarse en el resultado devuelto por el flujo, con evidencia de la acción y un camino de recuperación.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/">Microsoft Learn · Copilot Studio</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/power-automate/">Microsoft Learn · Power Automate</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention">Microsoft Learn · Políticas de datos en Power Platform</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-15.html"><small>Semana 15</small>Copilot Studio · Agentes, conocimiento y temas</a>
+          <a href="semana-17.html"><small>Semana 17</small>Lovable o Replit y análisis de campañas</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

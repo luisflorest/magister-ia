@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un agente puede elegir pasos y usar herramientas para alcanzar un objetivo. La autonomía útil depende de cómo se acotan las decisiones y se comprueba el resultado.">
+  <title>Herramientas, MCP, memoria y planificación · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 5 · Agentes I</span>
+        <h1>Herramientas, MCP, memoria y planificación</h1>
+        <p>Un agente puede elegir pasos y usar herramientas para alcanzar un objetivo. La autonomía útil depende de cómo se acotan las decisiones y se comprueba el resultado.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Flujo y agente</a>
+          <a href="#tema-2">MCP</a>
+          <a href="#tema-3">Memoria y comparación</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Flujo y agente</h2>
+          <p>En un flujo, el diseño fija la secuencia o sus ramas. En un agente, el modelo decide qué paso tomar según lo observado. Si extraer campos de una ficha sigue reglas estables, un flujo puede ser suficiente. Investigar una pregunta que requiere escoger fuentes puede justificar decisiones del modelo.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>MCP</h2>
+          <p>Model Context Protocol define cómo una aplicación cliente se conecta a servidores que exponen capacidades, como herramientas, recursos o prompts. El protocolo facilita integrar capacidades. La autorización y la confianza en los resultados siguen dependiendo de la configuración y del origen de cada dato.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Memoria y comparación</h2>
+          <p>El historial aporta contexto de la sesión. Un estado persistente puede conservar decisiones entre sesiones y necesita reglas de acceso, retención y corrección. Compara ChatGPT, Genspark y Perplexity con la misma pregunta pública, las mismas reglas y una pauta de calidad de citas, abstención, cobertura y revisión.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Objetivo</li>
+            <li>Selección de herramienta</li>
+            <li>Observación</li>
+            <li>Respuesta o siguiente paso</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Para reunir fuentes públicas sobre inclusión financiera, un agente puede elegir qué enlaces abrir. Su salida indica institución, fecha y alcance y evita generalizar desde una sola fuente.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>Agrega autonomía donde ahorre decisiones repetitivas y puedas controlar permisos, costos y calidad.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://www.anthropic.com/research/building-effective-agents">Anthropic · Building effective agents</a></li>
+            <li><a href="https://modelcontextprotocol.io/docs/learn/architecture">Model Context Protocol · Arquitectura</a></li>
+            <li><a href="https://www.perplexity.ai/help-center/en">Perplexity · Centro de ayuda</a></li>
+            <li><a href="https://www.genspark.ai/">Genspark · Descripción del producto</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-04.html"><small>Semana 4</small>Microsoft 365 Copilot y Google Workspace</a>
+          <a href="semana-06.html"><small>Semana 6</small>Claude, carpetas, conectores y skills</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

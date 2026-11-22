@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un flujo de aprobación conecta una solicitud con la persona responsable y deja un estado que el equipo puede consultar.">
+  <title>Power Automate I con Microsoft 365 · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 13 · Automatización IV</span>
+        <h1>Power Automate I con Microsoft 365</h1>
+        <p>Un flujo de aprobación conecta una solicitud con la persona responsable y deja un estado que el equipo puede consultar.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Disparadores y conectores</a>
+          <a href="#tema-2">Aprobaciones y trazabilidad</a>
+          <a href="#tema-3">Gobierno en Power Platform</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Disparadores y conectores</h2>
+          <p>Una respuesta de Forms o un evento en SharePoint pueden dar inicio al flujo. Outlook y Teams sirven como canales de aviso. Excel puede apoyar pilotos acotados. Evalúa un registro con controles de acceso y concurrencia cuando varias personas actualicen estados.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Aprobaciones y trazabilidad</h2>
+          <p>Define un responsable, las decisiones disponibles y el comportamiento ante vencimiento. Registra identificador, estado, fecha y comentario según corresponda. Mantén el dato de estado en una fuente que se pueda verificar después del aviso.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Gobierno en Power Platform</h2>
+          <p>Confirma entorno, licencia, credenciales y políticas de datos con TI. Las políticas de datos pueden restringir conectores y cómo se combinan. Acota qué aparece en avisos y bitácoras. Si una aprobación queda pendiente, define un camino de escalamiento y revisión.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Solicitud</li>
+            <li>Registro</li>
+            <li>Aprobación</li>
+            <li>Actualización de estado</li>
+            <li>Aviso</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Una ficha ficticia entra desde Forms. Tras la revisión, el estado queda actualizado en el registro y el aviso incluye solo el identificador. Un fallo del aviso no borra la decisión.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>Trata registro, aprobación y notificación como etapas observables. Así puedes recuperar el flujo desde el punto correcto.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://learn.microsoft.com/en-us/power-automate/">Microsoft Learn · Power Automate</a></li>
+            <li><a href="https://learn.microsoft.com/en-us/power-platform/admin/wp-data-loss-prevention">Microsoft Learn · Políticas de datos en Power Platform</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-12.html"><small>Semana 12</small>n8n II con IA y Botpress</a>
+          <a href="semana-14.html"><small>Semana 14</small>API de Claude con Python y RAG</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

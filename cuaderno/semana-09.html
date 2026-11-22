@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="La evaluación convierte una expectativa general en criterios observables y permite comparar versiones.">
+  <title>Casos de prueba, métricas y regresión · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 9 · Evaluación de IA</span>
+        <h1>Casos de prueba, métricas y regresión</h1>
+        <p>La evaluación convierte una expectativa general en criterios observables y permite comparar versiones.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Diseño de casos</a>
+          <a href="#tema-2">Métricas y revisión humana</a>
+          <a href="#tema-3">Regresión y liberación</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Diseño de casos</h2>
+          <p>Cada caso reúne entrada, contexto, salida esperada o rúbrica y severidad. Incluye situaciones comunes, faltantes, ambigüedades y fallas de herramientas. En un agente con permisos, evalúa también las acciones ejecutadas y el estado final.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Métricas y revisión humana</h2>
+          <p>Para campos estructurados, compara valores contra una referencia. Para resúmenes, evalúa fidelidad, omisiones y respaldo de afirmaciones con una pauta. Calibra cualquier evaluación automática con una muestra revisada por personas y revisa desacuerdos.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Regresión y liberación</h2>
+          <p>Mantén un conjunto de casos estable entre versiones y agrega casos a partir de fallas relevantes. Guarda versión, entrada y evidencia. Una caída en una tarea crítica puede detener el despliegue aunque la métrica global mejore.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Casos y rúbrica</li>
+            <li>Ejecución</li>
+            <li>Clasificación de errores</li>
+            <li>Comparación entre versiones</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>En fichas ficticias, convertir «hipótesis de uso» en «beneficio demostrado» es un error grave. La pauta lo distingue de un cambio menor de redacción y registra ambos por separado.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>Define el umbral y los errores críticos antes de comparar. Eso ayuda a decidir qué mejora alcanza para liberar una versión.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents">Anthropic · Evaluación de agentes</a></li>
+            <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST · AI Risk Management Framework</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-08.html"><small>Semana 8</small>OpenClaw, autonomía y permisos</a>
+          <a href="semana-10.html"><small>Semana 10</small>APIs, webhooks, JSON y Make</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

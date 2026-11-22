@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un flujo con IA combina pasos predecibles, generación de texto y reglas para manejar respuestas sin respaldo.">
+  <title>n8n II con IA y Botpress · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 12 · Automatización III</span>
+        <h1>n8n II con IA y Botpress</h1>
+        <p>Un flujo con IA combina pasos predecibles, generación de texto y reglas para manejar respuestas sin respaldo.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Cadenas, agentes y memoria</a>
+          <a href="#tema-2">Consulta a documentos</a>
+          <a href="#tema-3">Canal conversacional</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Cadenas, agentes y memoria</h2>
+          <p>Una cadena define en qué orden aplicar indicaciones o transformaciones. Un agente puede elegir herramientas. La memoria aporta información entre mensajes, como el tema que se está conversando. Una memoria de sesión puede ser suficiente para muchos casos.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Consulta a documentos</h2>
+          <p>El flujo recupera fragmentos de fuentes elegibles y los entrega al modelo para formular la respuesta. Registra qué fragmentos llegaron al modelo y de qué documento salieron. La evidencia insuficiente requiere abstenerse o derivar.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Canal conversacional</h2>
+          <p>Botpress permite definir flujos y fuentes para un chatbot. Diseña mensajes de entrada, tratamiento de preguntas fuera de alcance y una ruta de derivación. Si el chatbot llama a una automatización, valida parámetros y mantén las herramientas de escritura fuera del alcance de la lectura.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Consulta</li>
+            <li>Recuperación</li>
+            <li>Respuesta con respaldo</li>
+            <li>Derivación si falta evidencia</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Un chatbot de prueba consulta minutas ficticias. Si la minuta registra un acuerdo sin plazo, separa el acuerdo de la fecha faltante y cita el documento que sustenta la respuesta.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>La recuperación aporta evidencia y la memoria aporta contexto de conversación. Cada componente tiene permisos y retención propios.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://docs.n8n.io/build/integrate-ai.md">n8n · Integración de IA</a></li>
+            <li><a href="https://botpress.com/docs/">Botpress · Documentación</a></li>
+            <li><a href="https://arxiv.org/abs/2005.11401">Lewis et al. · Retrieval-Augmented Generation</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-11.html"><small>Semana 11</small>n8n I · Flujos y manejo de errores</a>
+          <a href="semana-13.html"><small>Semana 13</small>Power Automate I con Microsoft 365</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

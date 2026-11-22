@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="RAG combina búsqueda de evidencia con generación. Así puedes comprobar qué parte del resultado está respaldada por un documento.">
+  <title>API de Claude con Python y RAG · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 14 · Empresa I</span>
+        <h1>API de Claude con Python y RAG</h1>
+        <p>RAG combina búsqueda de evidencia con generación. Así puedes comprobar qué parte del resultado está respaldada por un documento.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Llamadas a la API</a>
+          <a href="#tema-2">Recuperación y respuesta</a>
+          <a href="#tema-3">Evaluación por etapa</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Llamadas a la API</h2>
+          <p>Un programa Python puede enviar mensajes a la API y procesar su respuesta. Mantén la clave fuera del código y de los registros. Maneja fallas de red y límites de servicio de forma explícita. Registra modelo, versión del prompt y consumo para comparar ejecuciones.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Recuperación y respuesta</h2>
+          <p>Primero prepara fragmentos con metadatos como título, sección y versión. Luego recupera candidatos según la consulta y entrega al modelo un contexto acotado. La salida cita sus fuentes y se abstiene si la evidencia es insuficiente o contradictoria.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Evaluación por etapa</h2>
+          <p>Mide si la recuperación encontró el fragmento esperado entre sus primeros resultados. Después revisa si la respuesta usa el fragmento correctamente y distingue vigencias. Si falla la recuperación, ajustar el prompt de redacción rara vez resuelve el problema de origen.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Consulta</li>
+            <li>Recuperación de fragmentos</li>
+            <li>API de generación</li>
+            <li>Respuesta con citas</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Un prototipo trabaja con documentos públicos de la CMF. Ante una pregunta que alude a una versión anterior, identifica la versión de cada fragmento y evita mezclar condiciones de textos distintos.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>Una respuesta verificable cita el fragmento y la versión aplicable. La revisión legal o de cumplimiento sigue el proceso institucional.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://platform.claude.com/docs/en/api/overview">Anthropic · API de Claude</a></li>
+            <li><a href="https://arxiv.org/abs/2005.11401">Lewis et al. · Retrieval-Augmented Generation</a></li>
+            <li><a href="https://www.cmfchile.cl/portal/normativa/624/w4-propertyvalue-49163.html?LNAN=1&amp;indice=3.1.2">CMF · Recopilación Actualizada de Normas de Bancos</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-13.html"><small>Semana 13</small>Power Automate I con Microsoft 365</a>
+          <a href="semana-15.html"><small>Semana 15</small>Copilot Studio · Agentes, conocimiento y temas</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

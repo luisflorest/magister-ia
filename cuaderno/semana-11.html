@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un flujo de n8n conecta nodos que reciben y transforman datos. El diseño incluye las rutas saludables y las rutas de falla.">
+  <title>n8n I · Flujos y manejo de errores · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 11 · Automatización II</span>
+        <h1>n8n I · Flujos y manejo de errores</h1>
+        <p>Un flujo de n8n conecta nodos que reciben y transforman datos. El diseño incluye las rutas saludables y las rutas de falla.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Nodos, disparadores y datos</a>
+          <a href="#tema-2">Credenciales y alcance</a>
+          <a href="#tema-3">Ejecuciones fallidas</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Nodos, disparadores y datos</h2>
+          <p>El disparador inicia una ejecución. Cada nodo realiza una operación y entrega datos a otros nodos. Inspecciona la estructura de entrada y salida antes de mapear campos y diferencia la ruta de prueba de la ruta que procesará eventos reales.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Credenciales y alcance</h2>
+          <p>La credencial define con qué identidad se conecta el nodo. Usa datos ficticios y cuentas de prueba. Revisa quién puede ejecutar o editar el flujo, quién puede usar la credencial y qué datos quedan en el historial.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Ejecuciones fallidas</h2>
+          <p>Distingue un error transitorio de datos inválidos. Un flujo de error puede alertar con el identificador de ejecución y la etapa que falló. Mantén los datos del mensaje al mínimo y registra qué acciones ya ocurrieron antes de reintentar.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Disparador</li>
+            <li>Validación de datos</li>
+            <li>Acción</li>
+            <li>Registro o flujo de error</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>El flujo ficticio crea una entrada en una tabla de prueba y falla antes de confirmar. En la siguiente ejecución busca el identificador existente y evita duplicar la entrada.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>La idempotencia permite reintentar sin repetir el efecto. Diseñarla es más seguro que borrar manualmente casos duplicados.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://docs.n8n.io/">n8n · Documentación</a></li>
+            <li><a href="https://docs.n8n.io/build/flow-logic/handle-errors-gracefully.md">n8n · Manejo de errores</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-10.html"><small>Semana 10</small>APIs, webhooks, JSON y Make</a>
+          <a href="semana-12.html"><small>Semana 12</small>n8n II con IA y Botpress</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

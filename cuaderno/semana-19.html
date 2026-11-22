@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Un prototipo defendible recorre el caso principal de inicio a fin y deja evidencia de cómo maneja fallas.">
+  <title>Construcción, pruebas y ficha pre-FUID · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 19 · Proyecto final I</span>
+        <h1>Construcción, pruebas y ficha pre-FUID</h1>
+        <p>Un prototipo defendible recorre el caso principal de inicio a fin y deja evidencia de cómo maneja fallas.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">Alcance vertical</a>
+          <a href="#tema-2">Pruebas y recuperación</a>
+          <a href="#tema-3">Ficha pre-FUID</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>Alcance vertical</h2>
+          <p>Define quién usa el flujo, qué recibe, qué entrega y quién valida. Limita el primer corte a una ruta que funcione con datos ficticios o fuentes públicas. Mantén trazabilidad entre la necesidad, la versión del prototipo y los criterios de aceptación.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Pruebas y recuperación</h2>
+          <p>Incluye ruta principal, datos faltantes, acceso insuficiente y error de una fuente. Registra entradas, resultados y estado final. Ante una falla identifica quién actúa, qué se puede reintentar y qué cambios requieren reversión.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Ficha pre-FUID</h2>
+          <p>Resume problema, población usuaria, resultado buscado, evidencia disponible, dependencias y riesgos. Identifica los puntos que requieren autorización antes de un piloto corporativo. Deja los costos o fechas sin respaldo como «sin dato».</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Problema</li>
+            <li>Prototipo acotado</li>
+            <li>Pruebas</li>
+            <li>Evidencia y ficha</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Un flujo ficticio de minutas prepara un resumen y lo almacena como borrador. La prueba de falla corta el acceso a la fuente y confirma que el registro queda pendiente.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>La revisión de riesgos describe datos, identidad, permisos y respuesta ante falla para cada parte del flujo.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST · AI Risk Management Framework</a></li>
+            <li><a href="https://www.anthropic.com/research/demystifying-evals-for-ai-agents">Anthropic · Evaluación de agentes</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-18.html"><small>Semana 18</small>Caso de negocio, costos y adopción</a>
+          <a href="semana-20.html"><small>Semana 20</small>Defensa, evidencia y portafolio</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>

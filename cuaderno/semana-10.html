@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Una automatización conectada necesita un contrato de datos y una respuesta clara cuando ese contrato se rompe.">
+  <title>APIs, webhooks, JSON y Make · Magíster IA autodidacta</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="index.html">Magíster IA autodidacta</a>
+      <a class="malla" href="index.html#malla">Malla curricular</a>
+    </div>
+  </header>
+  <main id="contenido">
+    <header class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Semana 10 · Automatización I</span>
+        <h1>APIs, webhooks, JSON y Make</h1>
+        <p>Una automatización conectada necesita un contrato de datos y una respuesta clara cuando ese contrato se rompe.</p>
+      </div>
+    </header>
+    <div class="wrap lesson-layout">
+      <aside class="sidebar">
+        <h2>En esta lectura</h2>
+        <nav aria-label="Secciones de la lectura">
+          <a href="#tema-1">API, contrato y JSON</a>
+          <a href="#tema-2">Webhook y eventos</a>
+          <a href="#tema-3">Escenarios de Make</a>
+          <a href="#esquema">Esquema</a>
+          <a href="#caso">Caso ficticio</a>
+          <a href="#fuentes">Fuentes</a>
+        </nav>
+      </aside>
+      <article class="reading" aria-label="Material de estudio">
+        <section class="concept" id="tema-1">
+          <h2>API, contrato y JSON</h2>
+          <p>Una API expone operaciones con entradas, salidas y reglas de autenticación. JSON representa objetos, listas, números, texto, valores lógicos y null. Un campo ausente y un valor null pueden significar cosas distintas para quien recibe la petición.</p>
+        </section>
+        <section class="concept" id="tema-2">
+          <h2>Webhook y eventos</h2>
+          <p>Con polling, el flujo consulta periódicamente si hay novedades. Con un webhook, el origen envía una notificación cuando ocurre un evento. Diseña el flujo para validar el origen, recibir duplicados y distinguir entre confirmación de recepción y procesamiento completo.</p>
+        </section>
+        <section class="concept" id="tema-3">
+          <h2>Escenarios de Make</h2>
+          <p>Make organiza escenarios con módulos conectados. Mapea campos entre módulos y revisa qué ocurre al fallar una llamada. Reintenta solo fallas transitorias cuando la operación tolere repeticiones. Un identificador del evento permite detectar duplicados.</p>
+        </section>
+        <section class="flow" id="esquema">
+          <h2>Cómo se conecta</h2>
+          <ol role="list">
+            <li>Evento</li>
+            <li>Validación</li>
+            <li>Transformación</li>
+            <li>Acción y registro</li>
+          </ol>
+        </section>
+        <section class="case" id="caso">
+          <span class="eyebrow">Caso ficticio</span>
+          <h2>Banca y gestión de iniciativas</h2>
+          <p>Una ficha ficticia llega dos veces con el mismo identificador. El flujo confirma la recepción y mantiene una sola entrada. Si falta el estado, deja el evento para revisión.</p>
+        </section>
+        <section class="takeaway">
+          <h2>Para recordar</h2>
+          <p>El éxito se mide en el estado final esperado. Recibir una respuesta HTTP exitosa acredita únicamente lo que ese endpoint se compromete a confirmar.</p>
+        </section>
+        <section class="refs" id="fuentes">
+          <h2>Fuentes</h2>
+          <p>Consultadas el 22 de noviembre de 2026.</p>
+          <ul>
+            <li><a href="https://help.make.com/webhooks">Make · Webhooks</a></li>
+            <li><a href="https://www.rfc-editor.org/info/rfc8259/">RFC Editor · JSON (RFC 8259)</a></li>
+          </ul>
+        </section>
+        <nav class="neighbors" aria-label="Lecturas adyacentes">
+          <a href="semana-09.html"><small>Semana 9</small>Casos de prueba, métricas y regresión</a>
+          <a href="semana-11.html"><small>Semana 11</small>n8n I · Flujos y manejo de errores</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+  <footer><div class="wrap">Cuaderno de estudio · IA aplicada a banca</div></footer>
+</body>
+</html>
